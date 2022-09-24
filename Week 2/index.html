@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Week 2 Notes</h1>
+    <h2> Chapter 2 - Programming Basics</h2>
+    <ul>
+      <li>Comments in javascript // this a is a comment /* this is a longer comment*/</li>
+      <li>Grammar is similar to c programming languages</li>
+      <li>No need to use ae semicolon to terminate statement because JS interpreters use process called automatic semicolon insertion (ASI) but you can still add them if you want</li>
+      <li>Blocks are curly braces</li>
+      <li>These are reserved words:abstract, await, boolean, break, byte, case, catch, char, class, const, continue, debugger, default, delete, do, double, else, enum, 
+        export, extends, false, final, finally, float, for, function, goto, if, implements, import, in instanceof, int, interface, let, long, native, new, null, 
+        package, private, protected, public, return, short, static, super, switch, synchronized, this, throw, throws, transient, true, try, typeof, var, volatile, 
+        void, while, with, yield</li>
+      <li>Objects include arrays, functions, object literalsv</li>
+      <li>Typeof – ex: typeof {ninja: ‘turtle’} (return) ‘object’</li>
+      <li>Const is constant, let is if the variable might be reassigned later</li>
+      <li>Exponential notation = 1e6 – 1000000, 2E3 – 2000, 2.5e-3 – 0.0025v</li>
+      <li>NaN – not a number</li>
+      <li>parseInt() – can be used to convert string into number value</li>
+      <li>Global scope: any variable declared outside of a block</li>
+      <li>Local scope: any variable defined inside a block</li>
+    </ul>
+
+    <h2> Chapter 3 - Arrays, Logic, and Loops</h2>
+    <ul>
+      <li>join() – can be used to turn array into string</li>
+      <li>slice() – creates subarray, chopping out slice of original </li>
+      <li>splice() – removes items from array, inserts new items in their place</li>
+      <li>reverse() – reverses order of array</li>
+      <li>set – data structure that represents collection of unique values</li>
+      <li>ex: const list = new Set();</li>
+      <li>maps – data structure, convenient way of keeping list of key and value pairs</li>
+        <ol>similar to objects, maps can use any data type as key</ol>
+        <ol>creating map: const romanNumerals = new Map();</ol>
+        <ol>romanNumerals.set(1, ‘I’);</ol>
+    </ul>
+
+    <h2> Chapter 4 - Functions</h2>
+    <ul>
+      <li>function can be declared using constructor, body of function then is entered as a string</li>
+      <li>function hoisting – action of moving all variable and function declarations to the top of current scope = hoist();</li>
+        <ol>//code here</ol>
+        <ol>Function hoist() {</ol>
+        <ol>Console.log(‘Hoist Me!’);</ol>
+        <ol>}</ol>
+      <li>forEach() – loops through array and invoke callback function</li>
+      <li>colors.forEach( (color,index) =></li>
+      <li>console.log(`Color at position ${index}  is ${color}`) );</li>
+      <li>Reduce() – iterates over each value in array</li>
+      <li>Filter() – returns new array that only contains items from original array</li>
+    </ul>
+
+  </body>
+</html>
