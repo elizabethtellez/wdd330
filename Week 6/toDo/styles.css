@@ -1,0 +1,99 @@
+body {
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3 {
+    color: #FFB703;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label {
+    padding-right: 15px;
+}
+
+.gridContainer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #023047;
+    border-radius: 10px;
+    display: flex;
+    width: 70%;
+    height: 50%;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.category {
+    width: 100%;
+}
+
+.task {
+    width: 90%;
+    height: 25px;
+    border: solid #219EBC 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 5%; 
+    margin-right: 5%;
+    display:flex;
+}
+
+.formItem {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.taskName {
+    width: 90%;
+}
+
+.checkBox {
+    width: 10%;
+}
+
+.addNewTask {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 60%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #FB8500;
+    color: white;
+    text-align: center;
+    margin: 15px;
+    margin-left: 20%;
+    margin-right: 20%; 
+}
+
+.hide {
+    display: none;
+}
+
+.filterButton {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding: 5px;
+    width: 33.3333%;
+    border: none;
+    height: 40px;
+    color: white;
+    background: #219EBC;
+}
+
+#filters {
+    padding-top: 10px;
+    width:70%;
+    align-content: center;
+}
