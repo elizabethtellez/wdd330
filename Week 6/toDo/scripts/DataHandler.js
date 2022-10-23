@@ -6,22 +6,20 @@ export class DataHandler {
     categories = new Array()
     display = document.getElementById("To-Do")
 
-    /*
+    /******
      * addCategory
      * This will add a category to the data model
      */
-
     addCategory(categoryName) {
         let category = new Category(categoryName, this.categories.length)
         this.categories.push(category)
         console.log(`New category ${categoryName} created`)
     }
 
-    /*
+    /*******
      * addTask
      * This will add a task to the data model
      */
-
     addTask(taskName, categoryName, completed = false) {
 
         let category = this.categories.find((category) => {
@@ -42,11 +40,10 @@ export class DataHandler {
 
     }
 
-    /*
+    /*****
      * removeTask(id)    id: id of the task 
      * This will remove a task from the data model
      */
-
     removeTask(id) {
 
         var categoryName = ""
@@ -82,31 +79,28 @@ export class DataHandler {
     }
 
 
-    /*
+    /********
      * displayAll()
      * This wil display all the tasks stored in the dataModel
      */
-
     displayAll() {
         this.categories.forEach((category) => {
             this.displayAllTasksByCategory(category.name)
         })
     }
 
-    /*
+    /**********
      * removeAllTasks() 
      * this will remove all the tasks on the screen.
      */
-
     removeAllTasks() {
         this.display.innerHTML = ""
     }
 
-    /*
+    /*********
      * displayAllTasksByCategory()
      * This will display all of the tasks that belong to a specific category
      */
-
     displayAllTasksByCategory(categoryName) {
         let category = this.categories.find((category) => {
             return category.name === categoryName
@@ -131,11 +125,10 @@ export class DataHandler {
         }
     }
 
-    /*
+    /**
      * displayCompletedTasks()
      * This will display only the tasks that have been completed
      */
-    
     displayCompletedTasks() {
         let helperMethods = new HelperMethods()
 

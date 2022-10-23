@@ -46,10 +46,9 @@ checkBoxes.forEach((box) => {
 let selector = document.getElementById("categorySelector")
 let formContainer = document.getElementById("addTaskContainer")
 
-/*
+/**
  * This is what happens when the save new task button is clicked
  */
-
 document.getElementById("saveNewTask").addEventListener("click", () => {
 
     // get the form data
@@ -76,14 +75,14 @@ document.getElementById("saveNewTask").addEventListener("click", () => {
     displayButton()
 })
 
-/*
+/**
  * This will change the form to have the item added to the category
  */
-
 selector.addEventListener("change", () => {
     let selector = document.getElementById("categorySelector")
     document.getElementById("categoryName").value = selector.value
 })
+
 
 function displayButton() {
     let container = document.createElement("div")
@@ -96,10 +95,9 @@ function displayButton() {
     button.textContent = "Add New Task"
     container.appendChild(button)
 
-    /*
+    /***
     * This is what happens when the add new task is clicked
     */
-
     button.addEventListener("click", () => {
         dataHandler.removeAllTasks()
 
@@ -129,18 +127,20 @@ function displayButton() {
 }
 
 
-/*
+/**************
  * Event listeners for filter buttons
  */
-
 let showCompletedButton = document.getElementById("showCompleted")
 let showAllButton = document.getElementById("showAll")
 let showIncompletedButton = document.getElementById("showIncomplete")
+
+
 
 showCompletedButton.addEventListener("click", () => {
     if (document.getElementById("To-Do").innerHTML === "") {
         return
     }
+
 
     dataHandler.removeAllTasks()
     dataHandler.displayCompletedTasks()
@@ -172,6 +172,8 @@ showIncompletedButton.addEventListener("click", () => {
     setBackgroundColor()
     showIncompletedButton.style.backgroundColor = "slateblue"
 })
+
+
 
 function setBackgroundColor() {
     showCompletedButton.style.backgroundColor = "lightskyblue"

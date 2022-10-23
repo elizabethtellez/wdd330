@@ -17,8 +17,16 @@ export class HelperMethods {
             checkBox.checked = true
         }
         newTask.appendChild(checkBox)
-        
+
+        let remove = document.createElement("button")
+        remove.id = "removeTask"
+        remove.classList.add("removeTask")
+        remove.textContent = "X"
+        remove.setAttribute("onclick", "trashTask(" + id + ")")
+        newTask.appendChild(remove)
+
         return newTask
+        
     }
 
     createCategoryHTML(categoryName, id) {

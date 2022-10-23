@@ -13,10 +13,9 @@ export class Category {
         this.id = id      // just incase I need it
     }
 
-    /*
+    /****
      * Adds a task to the current category
      */
-
     addTask(taskName, completed) {
 
         // Create a new task
@@ -24,13 +23,23 @@ export class Category {
 
         // add the task to self.tasks
         this.tasks.push(newTask)
+
+        // // Get the category
+        // let category = document.getElementById(this.id)
+        
+        // // Create new HTML Element
+        // const helperMethods = new HelperMethods()
+        // let element = helperMethods.createHTMLTask(taskName, `${this.name}${this.tasks.length - 1}`, false)
+
+        // // Add element to the screen
+        // category.appendChild(element)
     }
 
-    /*
+    /******
      * Removes a task in the current Category
      */
     removeTask(taskid) {
-        console.log(taskid + "Before deletion")
+        console.log("Before deletion")
         console.table(this.tasks)
         for (let index in this.tasks) {
             if (this.tasks[index].id == taskid) {
@@ -42,5 +51,4 @@ export class Category {
         console.log("After")
         console.table(this.tasks)
     }
-    
 }

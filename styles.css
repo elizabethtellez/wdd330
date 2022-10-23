@@ -1,10 +1,22 @@
 body {
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: solid black 5px;
+    border-radius: 10px;
   }
   
-  h1 {
+h1 {
     background-color: lightpink;
     padding: 1em;
-  }
+    text-align: center;
+    border-radius: 10px;
+    margin-top: auto;
+}
+form{
+  padding-left: 20px;
+  
+}
   
