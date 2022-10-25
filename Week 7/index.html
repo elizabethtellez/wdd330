@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Week 7 Notes</h1>
+    <h2> Chapter 11 - Further Functions</h2>
+    <ul>
+        <li>The fact that you can define new properties, and modify the behavior of functions at 
+            runtime in JavaScript is one of my favorite parts of it. <br> It really increases the flexibility 
+            of the language, and you can do things that are just not possible in other languages.</li>
+        <li>Recursion is fun, or not, it's a bit of a brain bender! Also, something interesting is that 
+            JS has a recursion limit usually set to around 10,000. <br> Although Firefox and Safari let you to 
+            up to 30,000 ish.</li>
+        <li>Promises are great! Also, they seem to be a very common solution to async code in other languages.</li>
+        <li>Async/Await is even better than using raw promises, although you are still using promises behind 
+            the scenes. Any function declared with 'async' returns a promise.</li>
+        <li>Clojures are indeed a bit hard to understand. But they're also fundemental for thinking about scope.</li>
+        <li>Generators are neat, but I haven't found many uses for them yet. They're a lot like the 'yeild' keyword in Python.</li>
+        <li>I really like the rules of functional programming. I think they really help to make clear and understandable code.</li>
+        <li>"Higher-order functions are functions that accept another function as an argument, or return another 
+            function as a result, or both."</li>
+        <li>I like that general 'curry' function, but I cant see much use for it.</li>
+    </ul>
+
+    <h2> Chapter 13 - AJAX</h2>
+    <ul>
+        <li>Fetch requests are so incredibly important for 90% of real web applications. A lot of the apps 
+            we build at the school are just toys, <br> AJAX is the gateway to larger more complex apps.</li>
+        <li>It's interesting that the book seperates the headers and request objects into their own variables. 
+            I usually just use the 'fetch' <br> function's interface to define that stuff. If I even need too, I 
+            usually find the default headers acceptable.</li>
+        <li>Please don't import jQuery just to make requests.</li>
+        <li>I like that general 'curry' function, but I cant see much use for it.</li>
+        <li>There are 7 steps to on how AJAX works
+            <ol>
+                <li>An event occurs in a web page (the page is loaded, a button is clicked)</li>
+                <li>An XMLHttpRequest object is created by JavaScript</li>
+                <li>The XMLHttpRequest object sends a request to a web server</li>
+                <li>The server processes the request</li>
+                <li>The server sends a response back to the web page</li>
+                <li>The response is read by JavaScript</li>
+                <li>Proper action (like page update) is performed by JavaScript</li>
+            </ol>
+    </ul>
+</body>
+</html>

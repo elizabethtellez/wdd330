@@ -1,0 +1,14 @@
+body {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 70%;
+    margin: 0 auto;
+
+  }
+  
+  h1 {
+    background-color: #f4a261;
+    padding: 1em;
+    border-radius: 15px;
+  }
+  
