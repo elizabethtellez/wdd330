@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Week 8 Notes</h1>
+    <h2> Chapter 8 - Transforms and Transitions</h2>
+    <ul>
+        <li>Transform – lets you translate, rotate, scale, and/or skew any element on page</li>
+        <li>Transform functions – can manipulate an element’s appearance</li>
+        <li>Translation – allows you to move elements left, right, up, or down</li>
+            <ol> 
+                <li>Similar to position: relative;</li>
+                <li>Translate(x,y) – move left and move up</li>
+                <li>Transform: translateY(); moves up only</li>
+                <li>Transform: translateX(); moves y only</li>
+                <li>Doesn’t work on inline elements</li>
+            </ol>
+        <li>Scale(x,y) function – scales element by defined factors horizontally then vertically</li>
+        <li>Rotate() function – rotates element around point of origin transform: rotate(10deg);</li>
+        <li>Skew(x,y) function – skew along x and y axes both parameters included unless you want it to only occur on x axis</li>
+        <li>Transform-origin property – transform-origin: 0 0;</li>
+        <li>Transform, depending on the order you take the result will be different. translate and rotate will result in two different outcomes</li>
+        <li>Transitions allow the values of CSS properties to change over time, simple animations</li>
+        <li>Transition property – first declare original state of element</li>
+            <ol>      
+                <li>Second – declare final state of transition, ex: hover</li>
+                <li>Third – include transition function in your default style declaration using transition properties</li>
+            </ol>
+        <li>Animation properties – need 2 declarations for each property</li>
+            <ol>
+                <li>Animation-name: appearDisappear;</li>
+                <li>Animation duration: 300ms;</li>
+            </ol>
+        <li>Animation-timing-function property – determines how the animation will progress over its duration</li>
+
+        
+    </ul>
+
+    <h2> Chapter 12 - Canvas, SVG, and Drag and Drop</h2>
+    <ul>
+        <li>Canvas API, we can draw anything we can imagine</li>
+            <ul>
+                <li>Gives power to manipulate pixels in images and even video</li>
+            </ul>
+        <li>Add canvas element page</li>
+            <ol>
+                <li><'canvas id="myCanvas" class="myCanvas" width="200" height="200"'></'canvas'></li>
+                <li>Can be used in css as well</li>
+                    <ul>
+                        <li>.myCanvas { border: dotted 2px black;}</li>
+                    </ul>
+            </ol>
+        <li>all of these things can be done in the Canvas JavaScript API</li>
+            <ol>
+                <li>canvas.html </li>
+                <li>getContext method – passing “2d” string, 2d drawing</li>
+                    <ul>
+                        <li>2d context is the only wide support</li>
+                    </ul>
+            </ol>
+        <li>Combining WebGL and new API – you can draw in 3d</li>
+        <li>Just like in real life, you must fill your brush with color</li>
+            <ol>
+                <li>strokeStyle, fillStyle, CanvasGradient, CanvasPattern</li>
+                <li>var canvas = document.getElementById("myCanvas");</li>
+                <li>var context = canvas.getContext("2d");</li>
+                <li>context.strokeStyle = "red";</li>
+                <li>context.fillStyle = "blue";</li>
+                    <ul>
+                        <li>can use # colors, and rgb()</li>
+                    </ul>
+            </ol>
+        <li>drawing a rectangle</li>
+            <ol>
+                <li>var canvas = document.getElementById("myCanvas");</li>
+                <li>var context = canvas.getContext("2d");</li>
+                <li>context.strokeStyle = "red";</li>
+                <li>context.fillStyle = "rgba(0, 0, 255, 0.5)";</li>
+                <li>context.fillRect(10, 10, 100, 100);</li>
+                <li>context.strokeRect(10, 10, 100, 100);</li>
+            </ol>
+        <li>adding image to your function</li>
+            <ul>
+                <li>function drawPattern() {</li>
+                <li>    var img = new Image();</li>
+                <li>    img.src = "../images/bg-bike.png";</li>
+                <li>    img.onload = function() {</li>
+                <li>    var pattern = context.createPattern(img, "repeat");</li>
+                <li>    context.fillStyle = pattern;</li>                        
+                <li>    context.fillRect(10, 10, 100, 100);</li>                
+                <li>    context.strokeRect(10, 10, 100, 100);</li>          
+                <li>    };</li>
+                <li>}</li>
+            </ul>
+        <li>Can draw any shape you can imagine</li>
+        <li>Saving Canvas drawings – toDataURL</li>
+            <ul>
+                <li>function saveDrawing() {</li>
+                <li>    var canvas5 = document.getElementById("demo5");</li>
+                <li>    window.open(canvas5.toDataURL("image/png"));</li>
+                <li>}</li>
+            </ul>
+        <li>SVG – Scalable Vector Graphics</li>
+            <ul>
+                <li>Allows you to describe vector graphics using XML</li>
+            </ul> 
+        <li>Drawing in SVG</li>
+            <ul>
+                <li>    <'circle cx="50" cy="50" r="25" fill="red"/''></li>
+                <li><'svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"''></svg></li>
+            </ul>
+        <li>Drag and drop</li>
+        <li>API – allows us to specify that certain elements are draggable, then specify what should happen when these draggable elements are dragged over or dropped onto other elements on the page</li>
+            <ol>
+                <li>Draggable – attribute used on any HTML</li>
+                <li>Event listener – dragstart on any draggable HTML elements</li>
+                <li>Event listener – dragover and drop events on any elements that you want to have accept dropped items</li>
+                <li>Draggable=”true”</li>
+                    <ul>
+                        <li>Draggable is not a Boolean – you HAVE to use true only</li>
+                    </ul>
+            </ol>
+    </ul>
+</body>
+</html>
