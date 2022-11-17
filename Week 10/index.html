@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Week 10 Notes</h1>
+    <h2> MDN: Validating forms</h2>
+    <p>
+      Form validation is something you find on most websites where you either sign up for
+      or create an account for. You will need to provide things such as emails or passwords.
+      Form validation makes sure that the user inputs the right things in the right places.
+      For example, if you are entering your email, you will always have a <i>@</i> and <i>.com</i>
+      in the email.
+  </p>
+  <p>
+      Below is an input box that will ask you for an email. Try entering something that is not an email.
+      There's also a password with some requirements to meet. Try different things and hit <i>submit</i>
+       to see what happens.
+  </p>
+  <form>
+      <label for="email">Email:</label>
+          <input id="email" type="email" name="email" placeholder="your email" required="email">
+      <label for="Password">Password:</label>
+          <input id="Password" type="password" name="Password" placeholder="your password" required="Password" pattern=".{5,10}" required title="5-10 Characters">
+          <input type="submit" name="submit">
+  </form>
+  <p>
+      HTML5 provides built-in form validation. That way, there's no need to use any Javascript
+      in order to validate a form, at least for some things. You can include attributes on form elements in 
+      your HTML to use validation. Some attributes are <i>required, minlength</i> and <i>maxlength, min</i>
+      and <i>max, type</i> and <i>pattern.</i>
+  </p>
+
+    <h2> MDN: Using Fetch</h2>
+    <li>Using the fetch method, you can use it to get other APIs</li>
+    <li>
+      You can put the data you get from the fetch method into an object to
+      allow you to manipulate the data and display it on a website.
+    </li>
+    <li>
+      You can set different headers when you use HTTP requests such as:
+      <pre>
+        const content = 'Hello World';
+        const myHeaders = new Headers();
+        myHeaders.append('Content-Type', 'text/plain');
+        myHeaders.append('Content-Length', content.length.toString());
+        myHeaders.append('X-Custom-Header', 'ProcessThisImmediately');
+        </pre
+      >
+    </li>
+    <li>
+      You can also upload data as well as files when you're making HTTP
+      requests with Async functions.
+    </li>

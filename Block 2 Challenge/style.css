@@ -1,0 +1,31 @@
+body {
+    background-color: #E6E1D3;
+    font-family: 'Mulish', sans-serif;
+}
+
+button {
+    display: block;
+}
+
+h1 {
+    color: #0F0F0F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 60px;
+}
+
+
+
+/* CLASS Selectors */
+.showChart {
+    margin-top: 2px;;
+}
+
+/* ID Selectors */
+
+#output {
+    color: #617F3B;
+    font-family: 'Mulish', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+}
